@@ -26,7 +26,7 @@ BEGIN
 ' [PROCEDURE]
 '   NAME........: [ATUALIZA_IN_NOVO_TESTE] 
 '   DESCRIPTION.: IMPORTA AS VENDAS ATIVADAS 
-'   AUTHOR......: CLEITON JOSÉ
+'   AUTHOR......: Pedro Emidio de Freitas Silva
 '   COMMENTARIES:
 '      
 ' [UPDATES]
