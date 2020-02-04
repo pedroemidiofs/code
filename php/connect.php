@@ -1,4 +1,12 @@
 <?php
-    $conector = mssql_connect("10.100.0.xx", "login", "password") or die("N�O FOI POSS�VEL A CONEX�O COM O SERVIDOR");
-    $conn = mssql_select_db("database", $conector) or die("N�O FOI POSS�VEL SELECIONAR O BANCO DE DADOS");
+    try {
+        $hostname = "10.100.0.xxx";
+        $dbname = "database";
+        $username = "login";
+        $pw = "password";
+        $dbh = new PDO ("dblib:host=$hostname;dbname=$dbname","$username","$pw");
+      } catch (PDOException $e) {
+        echo "Erro de conexão: " . $e->getMessage() . "\n";
+        exit;
+      }
 ?>
