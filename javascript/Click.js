@@ -5,7 +5,7 @@ class Click{
     }
     clicar(){
         botao.addEventListener('click',()=>{
-            banco.ajax('#clica', 'botao.php');
+            console.log('clicou!');
         });
     };
 }
