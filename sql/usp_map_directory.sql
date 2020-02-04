@@ -29,7 +29,7 @@ BEGIN
 	-- interfering with SELECT statements.
 SET NOCOUNT ON;
 
-    -- Insert statements for procedure here
+   -- Insert statements for procedure here
 
 IF ( SELECT NAME FROM TEMPDB.SYS.TABLES WHERE NAME = '##paytv_audio') IS NOT NULL BEGIN DROP TABLE ##paytv_audio END                            
 CREATE TABLE ##paytv_audio (caminho varchar(300))                          
