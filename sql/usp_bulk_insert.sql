@@ -1,13 +1,3 @@
-/*    ==Parâmetros de Script==
-
-    Versão do Servidor de Origem : SQL Server 2008 R2 (10.50.1600)
-    Edição do Mecanismo de Banco de Dados de Origem : Microsoft SQL Server Standard Edition
-    Tipo do Mecanismo de Banco de Dados de Origem : SQL Server Autônomo
-
-    Versão do Servidor de Destino : SQL Server 2017
-    Edição de Mecanismo de Banco de Dados de Destino : Microsoft SQL Server Standard Edition
-    Tipo de Mecanismo de Banco de Dados de Destino : SQL Server Autônomo
-*/
 
 USE [Esteira]
 GO
