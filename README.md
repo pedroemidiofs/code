@@ -1,7 +1,7 @@
 # code
 
-In this repository we got some code exemples like javascript, php, sql and vba. 
+In this repository i posted some code examples like javascript, php, sql and vba. 
 
-Be my guess to use it, any doubt contact me if you need.
+Be my guest to use it, any doubt contact me if you need.
 
 happy coding!
