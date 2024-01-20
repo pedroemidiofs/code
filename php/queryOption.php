@@ -14,7 +14,7 @@
 
             $campanha = $_GET['campanha'];
 
-            if($senha != 'Qualidade@321'){
+            if($senha != '1234'){
                 echo 'Senha incorreta!';
             }
             else{
