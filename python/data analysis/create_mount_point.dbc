@@ -1,0 +1,15 @@
+app_id = dbutils.secrets.get(scope = 'keyvault', key = 'AUGHQApp360DataLakeid')
+app_secret = dbutils.secrets.get(scope = 'keyvault', key = 'AUGHQApp360DataLakevalue')
+
+configs = {
+    "fs.azure.account.auth.type": "OAuth",
+    "fs.azure.account.oauth.provider.type": "org.apache.hadoop.fs.azurebfs.oauth2.ClientCredsTokenProvider",
+    "fs.azure.account.oauth2.client.id": app_id,
+    "fs.azure.account.oauth2.client.secret": app_secret,
+    "fs.azure.account.oauth2.client.endpoint": "https://login.microsoftonline.com/cef04b19-7776-4a94-b89b-375c77a8f936/oauth2/token"
+} 
+
+dbutils.fs.mount(
+  source = "abfss://datalakeapp360@ghqapp360datalake.dfs.core.windows.net/",
+  mount_point = "/mnt/teste",
+  extra_configs = configs) 
